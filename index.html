@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>База пациентов</title>
+	<!-- Подключаем JavaScript'овый скрипт с названием script.js -->
+	<script type='text/javascript' src='script.js'></script>
+	<!-- Подключаем style.css -->
+	<link rel='StyleSheet' type='text/css' href='style.css' />
+</head>
+<body>
+<div id='form_A'>
+	<form action='patient_create.php' method='POST'>
+		<input type='text' value='Фамилия' name='last_name' class='field' size='15' /><br />
+		<input type='text' value='Имя' name='first_name' class='field' size='15' /><br />
+		<input type='text' value='Отчество' name='patronymic' class='field' size='15' /><br />
+		<input type='date' value='Дата рождения' name='birthdate' class='field'   /><br />
+		<input type='text' value='id пациента' name='id_patient' class='field' size='15' /><br />
+		<br />
+		<!-- Кнопка отправки данных формы на сервер -->
+		<input type='submit' value='Внести в базу' class='button' name='check_button'
+					 onmouseover="check_fields('last_name', 'first_name', 'patronymic', 'birthdate', 'id_patient'); " />
+	</form>
+		<!--<div class="patient_create">
+	<div id="name">Введите ваще имя
+	</div>
+	<div id="last_name">
+	</div>
+	<div id="patronymic">   <!--Отчество
+	</div>
+	<div id="birthdate">
+	</div>
+<div class="">
+
+</div>
+<div class="">-->
+</div>
+</body>
+</html>

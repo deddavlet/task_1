@@ -1,0 +1,25 @@
+#form_A {
+	/* Абсолютное позиционирование - будем перемещать его сами */
+	position: absolute;
+	left: 50%; top: 50%;
+	width: 300px;  height: 150px;
+	margin-left: -150px; margin-top: -75px;
+	background-color: #ccc;
+	border: 2px solid #333;
+
+}
+
+/* кнопка с классом button в блоке id=form_A */
+#form_A .button {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	border: 2px solid #666;
+}
+
+/* стиль для кнопки, над которым стоит мышь */
+#form_A .button:hover {
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #bbb;
+}
